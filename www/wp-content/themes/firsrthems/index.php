@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 
@@ -16,7 +15,7 @@
 </head>
 
 <body>
-<?php the_permalink()?>
+
     <div class="container">
         <div id="row1" class="row">
             <header class="col-sm-12">
