@@ -34,14 +34,8 @@
         </div>
         <div id="row2" class="row">
             <div id="nav" class="col-sm-12">
-                <ul id="menu" class="menu">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Портфоліо</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Контакти</a></li>
-
-                </ul>
-            </div>
+             <?php wp_nav_menu(array('theme_locale'=>'menu')); ?>
+             </div>
         </div>
         <div id="row3" class="row">
             <div id="main" class="col-sm-8">
