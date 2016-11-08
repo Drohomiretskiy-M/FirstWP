@@ -26,8 +26,11 @@
 
                 </div>
                 <div class="search">
-                    <input type="text" name="search" placeholder="пошук">
-                    <button type="button" class="btn btn-default">Пошук</button>
+                    <form action="">
+                        <input type="text" name="s" placeholder="пошук">
+                        <button type="submit" class="btn btn-default">Пошук</button>
+
+                    </form>
                 </div>
             </header>
 
@@ -103,8 +106,12 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="search">
-                            <input type="text" name="first_name" placeholder="пошук">
-                            <button type="button" class="btn btn-default">Пошук</button>
+                           <form action="">
+                               <input type="text" name="s" placeholder="пошук">
+                            <button type="submit" class="btn btn-default">Пошук</button>
+                               
+                           </form>
+                            
                         </div>
                     </div>
                 </div>
