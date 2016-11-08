@@ -40,7 +40,6 @@
         <div id="row3" class="row">
             <div id="main" class="col-sm-8">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
                 <div class="article">
                     <div class="articleTitle">
                         <a href="<?php the_permalink()?>"> <b><?php the_title()?></b></a>
@@ -52,31 +51,22 @@
                     <div class="foterArticle">
                         <hr>
                         <?php the_tags( 'Теги:&nbsp;') ?>
-
                     </div>
                 </div>
                 <?php endwhile; ?>
                 <?php else:?>
-
                 <div class="notarticle">
                     <?php the_post_thumbnail()?> Статтів немає!!!
                 </div>
-
-
-
                 <?php endif; ?>
             </div>
             <div id="sidebar" class="col-sm-4">
-
                 <div id="categorys">
-
                     <?php if ( ! dynamic_sidebar( 'sidebar') ) : ?>
                     <?php endif; ?>
-
                     <br>
                 </div>
             </div>
-
             <br>
             <div id="sidebar" class="col-sm-4">
                 <div id="category">
@@ -91,42 +81,27 @@
                         <a href="#">Запис 3</a>
                         <br>
                         <a href="#">Запис 4</a>
-
                         <br>
                     </div>
                 </div>
-
             </div>
         </div>
-
         <div id="row4" class="row">
             <div id="footer" class="col-sm-12">
                 <div class="col-sm-2">
                     <div class="aa">
-
-
-                        <?php $massiv_vhodnih_parametrov=array( 'echo'=> false, 'items_wrap'=>'%3$s', 'depth' => 0,'after' => '', 'before'=> ''); print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');
-?>
-        
-                        
+                        <?php $massiv_vhodnih_parametrov=array( 'echo'=> false, 'items_wrap'=>'%3$s', 'depth' => 0,'after' => '', 'before'=> ''); print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');?>                     
                     </div>
-
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                      <?php if ( ! dynamic_sidebar( 'footer') ) : ?>
                         <?php endif; ?>
                     </div>
-                    <div class="col-sm-2">
-                        <a href="#">Сторінка 1</a>
-                        <br>
-                        <a href="#">Сторінка 2</a>
-                        <br>
-                        <a href="#">Сторінка 3</a>
-                        <br>
-                        <a href="#">Сторінка 4</a>
-                        <br>
+                    <div class="col-sm-3">
+                         <?php if ( ! dynamic_sidebar( 'page_footer') ) : ?>
+                        <?php endif; ?>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="search">
                             <input type="text" name="first_name" placeholder="пошук">
                             <button type="button" class="btn btn-default">Пошук</button>

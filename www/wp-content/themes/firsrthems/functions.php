@@ -17,11 +17,11 @@ register_nav_menu('menu' , 'Heder menu');
 		);
 register_sidebar($args);
 
-// Віджет footer
+// Віджет категорії в footer
 	$args_footer = array(
-		'name'          => 'Віджет footer',
+		'name'          => 'Віджет категорії в footer',
 		'id'            => "footer",
-		'description'   => 'Тут буде віджет футера',
+		'description'   => 'Тут буде віджет категорії в футера',
 		'after_widget'  => '<hr>',
 		'before_widget' => '<div id="category_footer">',
 		'after_widget'  => '</div>',
@@ -29,3 +29,15 @@ register_sidebar($args);
         
 		);
 register_sidebar($args_footer);
+// Віджет сторінки в footer
+	$args_page_footer = array(
+		'name'          => 'Віджет сторінки в footer',
+		'id'            => "page_footer",
+		'description'   => 'Тут буде віджет категорії в футера',
+		'after_widget'  => '<hr>',
+		'before_widget' => '<div id="category_footer">',
+		'after_widget'  => '</div>',
+      
+        
+		);
+register_sidebar($args_page_footer);
