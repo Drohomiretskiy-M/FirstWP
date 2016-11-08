@@ -34,8 +34,8 @@
         </div>
         <div id="row2" class="row">
             <div id="nav" class="col-sm-12">
-             <?php wp_nav_menu(array('theme_locale'=>'menu')); ?>
-             </div>
+                <?php wp_nav_menu(array( 'theme_locale'=>'menu')); ?>
+            </div>
         </div>
         <div id="row3" class="row">
             <div id="main" class="col-sm-8">
@@ -67,24 +67,16 @@
                 <?php endif; ?>
             </div>
             <div id="sidebar" class="col-sm-4">
-                <div id="category">
-                    <div id="categoryTitle">
-                        <h5><b>Категорії</b></h5>
-                    </div>
+
                     <div id="categorys">
-                        <a href="#">Категорія 1</a>
-                        <br>
-                        <a href="#">Категорія 2</a>
-                        <br>
-                        <a href="#">Категорія 3</a>
-                        <br>
-                        <a href="#">Категорія 4</a>
+
+                        <?php if ( ! dynamic_sidebar( 'sidebar') ) : ?>
+                        <?php endif; ?>
 
                         <br>
                     </div>
                 </div>
 
-            </div>
             <br>
             <div id="sidebar" class="col-sm-4">
                 <div id="category">
@@ -99,6 +91,7 @@
                         <a href="#">Запис 3</a>
                         <br>
                         <a href="#">Запис 4</a>
+                        <a href="#" id="asid">2222</a>
 
                         <br>
                     </div>
@@ -111,11 +104,9 @@
             <div id="footer" class="col-sm-12">
                 <div class="col-sm-2">
                     <div class="aa">
-                        
-                      
-                            <?php 
-$massiv_vhodnih_parametrov=array('echo'=> false, 'items_wrap'=>'%3$s', 'depth' => 0,'after' => '&nbsp&nbsp&nbsp&nbsp', 'before'=> ''); 
-print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');
+
+
+                        <?php $massiv_vhodnih_parametrov=array( 'echo'=> false, 'items_wrap'=>'%3$s', 'depth' => 0,'after' => '', 'before'=> ''); print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');
 ?>
         
                         
@@ -124,33 +115,33 @@ print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');
                 </div>
                 <div class="col-sm-2">
                     <a href="#">Категорія 1</a>
-                    <br>
-                    <a href="#">Категорія 2</a>
-                    <br>
-                    <a href="#">Категорія 3</a>
-                    <br>
-                    <a href="#">Категорія 4</a>
-                    <br>
-                </div>
-                <div class="col-sm-2">
-                    <a href="#">Сторінка 1</a>
-                    <br>
-                    <a href="#">Сторінка 2</a>
-                    <br>
-                    <a href="#">Сторінка 3</a>
-                    <br>
-                    <a href="#">Сторінка 4</a>
-                    <br>
-                </div>
-                <div class="col-sm-6">
-                    <div class="search">
-                        <input type="text" name="first_name" placeholder="пошук">
-                        <button type="button" class="btn btn-default">Пошук</button>
+                        <br>
+                        <a href="#">Категорія 2</a>
+                        <br>
+                        <a href="#">Категорія 3</a>
+                        <br>
+                        <a href="#">Категорія 4</a>
+                        <br>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">Сторінка 1</a>
+                        <br>
+                        <a href="#">Сторінка 2</a>
+                        <br>
+                        <a href="#">Сторінка 3</a>
+                        <br>
+                        <a href="#">Сторінка 4</a>
+                        <br>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="search">
+                            <input type="text" name="first_name" placeholder="пошук">
+                            <button type="button" class="btn btn-default">Пошук</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 </body>
