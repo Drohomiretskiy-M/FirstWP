@@ -111,14 +111,14 @@
             <div id="footer" class="col-sm-12">
                 <div class="col-sm-2">
                     <div class="aa">
-                        <a href="#">Головна</a>
-                        <br>
-                        <a href="#">Портфоліо</a>
-                        <br>
-                        <a href="#">Блог</a>
-                        <br>
-                        <a href="#">Контакти</a>
-                        <br>
+                        
+                      
+                            <?php 
+$massiv_vhodnih_parametrov=array('echo'=> false, 'items_wrap'=>'%3$s', 'depth' => 0,'after' => '&nbsp&nbsp&nbsp&nbsp', 'before'=> ''); 
+print strip_tags (wp_nav_menu( $massiv_vhodnih_parametrov), '<a>');
+?>
+        
+                        
                     </div>
 
                 </div>
