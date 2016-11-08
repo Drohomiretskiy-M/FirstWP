@@ -68,14 +68,14 @@
             </div>
             <div id="sidebar" class="col-sm-4">
 
-                    <div id="categorys">
+                <div id="categorys">
 
-                        <?php if ( ! dynamic_sidebar( 'sidebar') ) : ?>
-                        <?php endif; ?>
+                    <?php if ( ! dynamic_sidebar( 'sidebar') ) : ?>
+                    <?php endif; ?>
 
-                        <br>
-                    </div>
+                    <br>
                 </div>
+            </div>
 
             <br>
             <div id="sidebar" class="col-sm-4">
@@ -91,7 +91,6 @@
                         <a href="#">Запис 3</a>
                         <br>
                         <a href="#">Запис 4</a>
-                        <a href="#" id="asid">2222</a>
 
                         <br>
                     </div>
@@ -114,14 +113,8 @@
 
                 </div>
                 <div class="col-sm-2">
-                    <a href="#">Категорія 1</a>
-                        <br>
-                        <a href="#">Категорія 2</a>
-                        <br>
-                        <a href="#">Категорія 3</a>
-                        <br>
-                        <a href="#">Категорія 4</a>
-                        <br>
+                     <?php if ( ! dynamic_sidebar( 'footer') ) : ?>
+                        <?php endif; ?>
                     </div>
                     <div class="col-sm-2">
                         <a href="#">Сторінка 1</a>

@@ -10,6 +10,7 @@ Text Domain: 1212
 
 
 */
+
 #row1 {
     background-color: antiquewhite;
 }
@@ -87,8 +88,6 @@ li:hover {
     margin: 10px;
     margin-left: 0px;
     padding: 5px;
-     
-    
     text-align: justify;
     float: left;
     width: 100%;
@@ -133,7 +132,6 @@ span {
     word-wrap: break-word;
 }
 
-
 .notarticle {
     height: 400px;
     background-color: #919191;
@@ -141,26 +139,57 @@ span {
     padding: 2px;
     padding-left: 5px;
     padding-top: 10px;
-    
 }
 
-#asid ul{
-    padding: 0;
-    margin-top: 10px;
+
+#category_footer {
+    padding-left: 0px;
 }
-#asid ul li:hover {
-    background-color: aliceblue;
-   
+
+#category_footer ul li {
+    background-color: #bcbcbc;
     border: none;
-     list-style-type: none;
-  
-}
-#asid ul li {
-    background-color:aliceblue;
-   
-    border: none;
-     list-style-type: none;
-    padding-bottom: 0;
+    list-style-type: none;
     height: auto;
-    
+ }
+
+#category_footer ul li:hover {
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    height: auto;
 }
+
+#category_footer ul {
+    padding: 0;
+}
+
+#category_footer h2 {
+    font-size: 11pt;
+    padding: 0;
+    margin: 0;
+}
++++
+#categorys {
+    padding-left: 0px;
+}
+
+#categorys ul li {
+    background-color: none;
+    border: none;
+    list-style-type: none;
+    height: auto;
+ }
+
+#categorys ul li:hover {
+   background-color: aliceblue;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    height: auto;
+}
+
+#categorys ul {
+    padding: 0;
+}
+
